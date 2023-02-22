@@ -1,0 +1,150 @@
+* { font-family: "Quicksand", sans-serif; }
+
+#left_arrow, #right_arrow
+{
+    padding-top: 2.4px;
+    cursor: pointer;
+}
+
+#right_arrow:active
+{
+    -webkit-animation:scale-up-center 1s cubic-bezier(.39,.575,.565,1.000) both; animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;
+}
+
+#left_arrow:active
+{
+    -webkit-animation:scale-up-center 1s cubic-bezier(.39,.575,.565,1.000) both; animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;
+}
+
+@-webkit-keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}
+
+#set_month { cursor: pointer; }
+
+.week-width 
+{
+    width: 14.28%;
+    text-align: center;
+    font-size: 16.5px;
+}
+
+#days div
+{
+    width: 14.28%;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+#days div:hover:not(.today)
+{
+    background-color: coral;
+    color: black;
+    border-radius: 4px;
+}
+
+#calendar
+{
+    background-color: #1f2029;
+    color: white;
+}
+
+#month
+{
+    background-color:coral;
+    color: black;
+    border-radius: 6px;
+    border-width: 2px;
+    border-style: solid;
+    border-color:#1f2029
+}
+
+.today
+{
+    background-color: coral;
+    color: #1f2029;
+    border-radius: 4px;
+}
+
+.foreign-days
+{
+    opacity: 0.5;
+}
+
+#month-menu
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #1f2029;
+    z-index: 1;
+    border-radius: 6px;
+    display: none;
+    
+}
+
+/* Animasyonlar - Animations */
+.puff-in-center{animation:puff-in-center .2s cubic-bezier(.47,0.000,.745,.715) both}
+@keyframes puff-in-center{0%{transform:scale(2);filter:blur(4px);opacity:0}100%{transform:scale(1);filter:blur(0);opacity:1}}
+
+
+.m-selection
+{
+    text-align: center;
+    background-color: #1f2029;
+    border-radius: 14px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #1f2029;
+    color: white;
+    font-size: large;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.m-selection:hover
+{
+    background-color: coral;
+    color: #1f2029;
+}
+
+#set-year
+{
+    background-color: coral;
+    color: #1f2029;
+    border-radius: 6px;
+    border-width: 2px;
+    border-style: solid;
+    border-color:#1f2029;
+}
+
+#left_arrow2
+{
+    padding-top: 7px;
+    cursor: pointer;
+    margin-left: 4px;
+}
+
+#right_arrow2
+{
+    padding-top: 7px;
+    cursor: pointer;
+    margin-right: 4px;
+}
+
+#right_arrow2:active
+{
+    -webkit-animation:scale-up-center 1s cubic-bezier(.39,.575,.565,1.000) both; animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;
+}
+
+#left_arrow2:active
+{
+    -webkit-animation:scale-up-center 1s cubic-bezier(.39,.575,.565,1.000) both; animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;
+}
+
+#year
+{
+    margin-top: 7px;
+}
+
